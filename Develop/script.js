@@ -33,7 +33,19 @@ var timeStatus = function() {
     $(".time-block").each(function(){
         var timeBlock = parseInt($(this).attr('id'))
         if (timeBlock === currentTime) {
+            $(this).removeClass("past")
+            $(this).removeClass("future")
             $(this).addClass("present")
+        }
+        else if(timeBlock < currentTime) {
+            $(this).removeClass("future")
+            $(this).removeClass("present")
+            $(this).addClass("past")
+        }
+        else {
+            $(this).removeClass("past")
+            $(this).removeClass("present")
+            $(this).addClass("future")
         }
         
         console.log(timeBlock)
