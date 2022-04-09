@@ -51,7 +51,10 @@ var timeStatus = function() {
         console.log(timeBlock)
     });
 }
-
-
 timeStatus()
+setInterval(function() {
+    timeStatus()
+    console.log("hello")
+}, (1000 * 60) * 30);
+// setInterval(timeStatus(), 1000)
 loadTasks()
