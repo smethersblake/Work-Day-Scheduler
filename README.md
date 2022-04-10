@@ -11,4 +11,10 @@ A website for the user to plan out their work day.
 * Bootstrap
 
 ## Website URL
+<<<<<<< HEAD
 https://smethersblake.github.io/Work-Day-Scheduler/
+=======
+https://smethersblake.github.io/Work-Day-Scheduler/
+
+![](/assets/img/work-day-scheduler-img.png "Optional title")
+>>>>>>> develop
