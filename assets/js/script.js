@@ -12,6 +12,7 @@ $(document).ready(function () {
             const timeBox = $(`<div class="row time-block" id="${i}"></div>`)
             const hour = $(`<div class="hour col-1 pt-4">${timeStamp + timeOfDay}</div><textarea class="description col-10"></textarea><button class="saveBtn col-1"><i class="oi oi-file"></i></button>`)
             $(timeBox).append(hour)
+            $(".container").append(timeBox)
     }
         $(".saveBtn").on("click", function(){
             var time = $(this).parent().attr("id")
@@ -54,11 +55,11 @@ $(document).ready(function () {
         
         console.log(timeBlock)
     });
-}
+    }
     timeStatus()
     setInterval(function() {
     timeStatus()
     console.log("hello")
-}, (1000 * 60) * 30);
+    }, (1000 * 60) * 30);
     loadTasks()
 });
