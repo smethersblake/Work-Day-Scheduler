@@ -13,4 +13,4 @@ A website for the user to plan out their work day.
 ## Website URL
 https://smethersblake.github.io/Work-Day-Scheduler/
 
-<img src="./img/work-day-schedular-img.png">
+![](/assets/img/work-day-scheduler-img.png "Optional title")
