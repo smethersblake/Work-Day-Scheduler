@@ -10,9 +10,7 @@ $(document).ready(function () {
             timeOfDay = 'pm'
         }
             const timeBox = $(`<div class="row time-block" id="${i}"></div>`)
-            // const hour = $(`<div class="hour col-1 pt-4">${timeStamp + timeOfDay}</div><textarea class="description col-10"></textarea><button class="saveBtn col-1"><i class="oi oi-file"></i></button>`)
-            const hour = $("<div class='hour col-1 pt-4'> + ('timeStamp' + timeOfDay )</div>")
-            $(".container").append(timeBox)
+            const hour = $(`<div class="hour col-1 pt-4">${timeStamp + timeOfDay}</div><textarea class="description col-10"></textarea><button class="saveBtn col-1"><i class="oi oi-file"></i></button>`)
             $(timeBox).append(hour)
     }
         $(".saveBtn").on("click", function(){
